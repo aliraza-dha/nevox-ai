@@ -1,0 +1,2596 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform your business communications with intelligent Arabic AI Voice Agents. Native Saudi dialect support, 24/7 automation, and enterprise-grade security for MENA businesses.">
+    <meta name="keywords" content="Arabic AI Voice Agent, Saudi AI Call Automation, Arabic Call Center AI, AI Voice Bot Saudi Arabia, voice automation KSA">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="NEVOX AI">
+    <title>Arabic AI Voice Agent Platform | Saudi AI Call Automation | NEVOX AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --navy: #0A0E27;
+            --purple: #8B7FFF;
+            --purple-light: #B5ADFF;
+            --white: #FFFFFF;
+            --gray-light: #E0E0E0;
+            --gray: #9CA3AF;
+            --navy-light: #151A3D;
+            --navy-card: #12162F;
+        }
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--white);
+            background: var(--navy);
+            overflow-x: hidden;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--navy);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--purple);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--purple-light);
+        }
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 999;
+            box-shadow: 0 4px 20px rgba(139, 127, 255, 0.4);
+        }
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(139, 127, 255, 0.5);
+        }
+        .scroll-top svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(139, 127, 255, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: var(--white);
+            font-size: 1.6rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo-icon {
+            width: 35px;
+            height: 35px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--gray-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--purple-light);
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 0.95rem;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(139, 127, 255, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(139, 127, 255, 0.5);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(139, 127, 255, 0.5);
+        }
+        .btn-secondary:hover {
+            background: rgba(139, 127, 255, 0.1);
+            border-color: var(--purple);
+        }
+        section {
+            padding: 100px 0;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, var(--white) 0%, var(--purple-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--white);
+        }
+        #hero {
+            background: var(--navy);
+            padding: 180px 0 120px;
+            position: relative;
+            overflow: hidden;
+        }
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(139, 127, 255, 0.15) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        /* Mouse follow light */
+        .hero-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(139, 127, 255, 0.25) 0%, rgba(139, 127, 255, 0.1) 30%, transparent 70%);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.3s;
+            z-index: 1;
+            filter: blur(40px);
+        }
+        /* Floating orbs */
+        .hero-orb {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(139, 127, 255, 0.4) 0%, transparent 70%);
+            filter: blur(30px);
+            pointer-events: none;
+            animation: floatOrb 8s ease-in-out infinite;
+        }
+        .hero-orb-1 {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        .hero-orb-2 {
+            width: 200px;
+            height: 200px;
+            top: 60%;
+            right: 15%;
+            animation-delay: -2s;
+        }
+        .hero-orb-3 {
+            width: 150px;
+            height: 150px;
+            bottom: 20%;
+            left: 20%;
+            animation-delay: -4s;
+        }
+        @keyframes floatOrb {
+            0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+            25% { transform: translate(30px, -30px) scale(1.1); opacity: 0.7; }
+            50% { transform: translate(-20px, 20px) scale(0.9); opacity: 0.4; }
+            75% { transform: translate(20px, 10px) scale(1.05); opacity: 0.6; }
+        }
+        /* Grid lines background */
+        .hero-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(139, 127, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(139, 127, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+        }
+        /* Shooting stars */
+        .shooting-star {
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(139, 127, 255, 0.8), transparent);
+            border-radius: 50%;
+            animation: shootingStar 3s linear infinite;
+            opacity: 0;
+        }
+        .shooting-star:nth-child(1) { top: 20%; left: 0; animation-delay: 0s; }
+        .shooting-star:nth-child(2) { top: 40%; left: 0; animation-delay: 1.5s; }
+        .shooting-star:nth-child(3) { top: 60%; left: 0; animation-delay: 3s; }
+        @keyframes shootingStar {
+            0% { transform: translateX(-100px) rotate(-15deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateX(calc(100vw + 100px)) rotate(-15deg); opacity: 0; }
+        }
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-text {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            color: var(--gray-light);
+            line-height: 1.8;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .hero-visual {
+            position: relative;
+            z-index: 2;
+        }
+        .dashboard-mockup {
+            background: var(--navy-card);
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid rgba(139, 127, 255, 0.2);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+            animation: floatDashboard 6s ease-in-out infinite;
+        }
+        @keyframes floatDashboard {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(139, 127, 255, 0.1);
+        }
+        .dashboard-dots {
+            display: flex;
+            gap: 8px;
+        }
+        .dashboard-dots span {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .dot-red { background: #FF5F57; }
+        .dot-yellow { background: #FFBD2E; }
+        .dot-green { background: #28CA41; animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(40, 202, 65, 0.4); }
+            50% { opacity: 0.8; box-shadow: 0 0 0 8px rgba(40, 202, 65, 0); }
+        }
+        .live-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray);
+            font-size: 0.8rem;
+        }
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: #28CA41;
+            border-radius: 50%;
+            animation: livePulse 1.5s infinite;
+        }
+        @keyframes livePulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.7; }
+        }
+        .dashboard-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background: rgba(139, 127, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(139, 127, 255, 0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        .stat-card:hover {
+            background: rgba(139, 127, 255, 0.2);
+            transform: scale(1.05);
+        }
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--purple-light);
+            position: relative;
+        }
+        .stat-trend {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.7rem;
+            color: #28CA41;
+            margin-left: 5px;
+            animation: fadeInUp 0.5s ease;
+        }
+        .stat-trend.down { color: #FF5F57; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--gray);
+            margin-top: 5px;
+        }
+        .dashboard-chart {
+            background: rgba(139, 127, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            height: 120px;
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+        }
+        .chart-bar {
+            flex: 1;
+            background: linear-gradient(180deg, var(--purple) 0%, var(--purple-light) 100%);
+            border-radius: 4px 4px 0 0;
+            min-height: 20px;
+            animation: growBar 1.5s ease-out forwards;
+            transform-origin: bottom;
+        }
+        @keyframes growBar {
+            from { transform: scaleY(0); }
+            to { transform: scaleY(1); }
+        }
+        .chart-bar:nth-child(1) { animation-delay: 0.1s; }
+        .chart-bar:nth-child(2) { animation-delay: 0.2s; }
+        .chart-bar:nth-child(3) { animation-delay: 0.3s; }
+        .chart-bar:nth-child(4) { animation-delay: 0.4s; }
+        .chart-bar:nth-child(5) { animation-delay: 0.5s; }
+        .chart-bar:nth-child(6) { animation-delay: 0.6s; }
+        .chart-bar:nth-child(7) { animation-delay: 0.7s; }
+        .chart-bar:nth-child(8) { animation-delay: 0.8s; }
+        .chart-bar:nth-child(9) { animation-delay: 0.9s; }
+        .chart-bar:nth-child(10) { animation-delay: 1s; }
+        .activity-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            background: rgba(139, 127, 255, 0.05);
+            border-radius: 8px;
+            margin-top: 15px;
+            animation: slideIn 0.5s ease;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .activity-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .activity-avatar {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+        .activity-text {
+            font-size: 0.8rem;
+            color: var(--gray-light);
+        }
+        .activity-text span {
+            color: var(--purple-light);
+        }
+        .activity-time {
+            font-size: 0.7rem;
+            color: var(--gray);
+        }
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 8px 12px;
+            background: rgba(139, 127, 255, 0.1);
+            border-radius: 12px;
+            width: fit-content;
+            margin-top: 10px;
+        }
+        .typing-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--purple-light);
+            border-radius: 50%;
+            animation: typingBounce 1.4s infinite ease-in-out;
+        }
+        .typing-dot:nth-child(1) { animation-delay: 0s; }
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typingBounce {
+            0%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-8px); }
+        }
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+        .section-header p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .section-label {
+            display: inline-block;
+            background: rgba(139, 127, 255, 0.15);
+            color: var(--purple-light);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .grid {
+            display: grid;
+            gap: 25px;
+        }
+        .grid-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+        .grid-3 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+        .grid-4 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+        .card {
+            background: var(--navy-card);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(139, 127, 255, 0.1);
+            transition: all 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(139, 127, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(139, 127, 255, 0.2) 0%, rgba(181, 173, 255, 0.1) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .bg-gradient {
+            background: linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 100%);
+        }
+        .feature-list {
+            list-style: none;
+        }
+        .feature-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: var(--gray-light);
+            font-size: 0.95rem;
+        }
+        .feature-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 16px;
+            width: 8px;
+            height: 8px;
+            background: var(--purple);
+            border-radius: 50%;
+        }
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .industry-card {
+            background: var(--navy-card);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(139, 127, 255, 0.1);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .industry-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--purple) 0%, var(--purple-light) 100%);
+        }
+        .industry-card:hover {
+            border-color: rgba(139, 127, 255, 0.3);
+            transform: translateX(5px);
+        }
+        .industry-card h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .industry-card p {
+            font-size: 0.9rem;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+        .two-col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+        .visual-box {
+            background: var(--navy-card);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(139, 127, 255, 0.15);
+        }
+        /* Calls Dashboard Styles */
+        .calls-dashboard {
+            background: var(--navy-card);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(139, 127, 255, 0.2);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+        }
+        .calls-dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(139, 127, 255, 0.1);
+            margin-bottom: 25px;
+        }
+        .calls-stats-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .calls-stat-box {
+            background: rgba(139, 127, 255, 0.08);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(139, 127, 255, 0.1);
+        }
+        .calls-stat-box.inbound-box {
+            border-left: 4px solid #28CA41;
+        }
+        .calls-stat-box.outbound-box {
+            border-left: 4px solid var(--purple);
+        }
+        .calls-stat-icon {
+            font-size: 2rem;
+            width: 60px;
+            height: 60px;
+            background: rgba(139, 127, 255, 0.15);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calls-stat-content {
+            flex: 1;
+        }
+        .calls-stat-label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 5px;
+        }
+        .calls-stat-value {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+        .calls-stat-trend {
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .calls-stat-trend.up { color: #28CA41; }
+        .calls-mini-chart {
+            width: 80px;
+            height: 40px;
+            position: relative;
+        }
+        .mini-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--purple), var(--purple-light), var(--purple), transparent);
+            animation: lineMove 2s ease-in-out infinite;
+        }
+        .inbound-chart .mini-line {
+            background: linear-gradient(90deg, transparent, #28CA41, #4ade80, #28CA41, transparent);
+        }
+        @keyframes lineMove {
+            0%, 100% { transform: scaleX(0.3); opacity: 0.5; }
+            50% { transform: scaleX(1); opacity: 1; }
+        }
+        .calls-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .calls-panel {
+            background: rgba(10, 14, 39, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(139, 127, 255, 0.1);
+        }
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .panel-header h4 {
+            font-size: 1rem;
+            color: var(--white);
+            font-weight: 600;
+        }
+        .panel-badge {
+            background: rgba(40, 202, 65, 0.2);
+            color: #28CA41;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .panel-badge.outbound {
+            background: rgba(139, 127, 255, 0.2);
+            color: var(--purple-light);
+        }
+        .calls-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .call-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: rgba(139, 127, 255, 0.05);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .call-row:hover {
+            background: rgba(139, 127, 255, 0.1);
+        }
+        .call-row.resolved {
+            opacity: 0.6;
+        }
+        .caller-avatar {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+        .caller-avatar.outbound-avatar {
+            background: linear-gradient(135deg, #28CA41 0%, #4ade80 100%);
+        }
+        .call-row.resolved .caller-avatar {
+            background: rgba(139, 127, 255, 0.3);
+        }
+        .caller-details {
+            flex: 1;
+        }
+        .caller-name {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--white);
+            font-weight: 500;
+        }
+        .caller-topic {
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+        .call-timer {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--gray);
+        }
+        .call-timer.active-call {
+            color: #28CA41;
+            animation: timerPulse 1s infinite;
+        }
+        .call-timer.waiting {
+            color: #FFBD2E;
+        }
+        .call-timer.dialing {
+            color: var(--purple-light);
+            animation: timerPulse 0.8s infinite;
+        }
+        @keyframes timerPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        /* Call Recording Styles */
+        .recordings-panel {
+            background: rgba(10, 14, 39, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(139, 127, 255, 0.1);
+            margin-top: 20px;
+        }
+        .recordings-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .recordings-header h4 {
+            font-size: 1rem;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .rec-indicator {
+            width: 10px;
+            height: 10px;
+            background: #FF5F57;
+            border-radius: 50%;
+            animation: recPulse 1s infinite;
+        }
+        @keyframes recPulse {
+            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255, 95, 87, 0.4); }
+            50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(255, 95, 87, 0); }
+        }
+        .recordings-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .recording-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: rgba(139, 127, 255, 0.05);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .recording-item:hover {
+            background: rgba(139, 127, 255, 0.1);
+        }
+        .recording-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+        .recording-info {
+            flex: 1;
+        }
+        .recording-name {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--white);
+            font-weight: 500;
+            margin-bottom: 3px;
+        }
+        .recording-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+        .recording-waveform {
+            flex: 1;
+            max-width: 150px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+        .wave-line {
+            flex: 1;
+            background: var(--purple);
+            border-radius: 2px;
+            transition: height 0.1s;
+        }
+        .recording-item.playing .wave-line {
+            animation: waveAnim 0.5s ease-in-out infinite alternate;
+        }
+        @keyframes waveAnim {
+            from { transform: scaleY(0.3); }
+            to { transform: scaleY(1); }
+        }
+        .wave-line:nth-child(1) { height: 40%; animation-delay: 0s; }
+        .wave-line:nth-child(2) { height: 70%; animation-delay: 0.1s; }
+        .wave-line:nth-child(3) { height: 50%; animation-delay: 0.2s; }
+        .wave-line:nth-child(4) { height: 90%; animation-delay: 0.3s; }
+        .wave-line:nth-child(5) { height: 60%; animation-delay: 0.4s; }
+        .wave-line:nth-child(6) { height: 80%; animation-delay: 0.5s; }
+        .wave-line:nth-child(7) { height: 45%; animation-delay: 0.6s; }
+        .wave-line:nth-child(8) { height: 65%; animation-delay: 0.7s; }
+        .recording-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .play-btn {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        .play-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(139, 127, 255, 0.4);
+        }
+        .play-btn svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
+        .recording-duration {
+            font-size: 0.8rem;
+            color: var(--gray);
+            min-width: 45px;
+        }
+        .download-btn {
+            background: rgba(139, 127, 255, 0.2);
+            border: none;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .download-btn:hover {
+            background: rgba(139, 127, 255, 0.4);
+        }
+        .download-btn svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--purple-light);
+        }
+        .calls-metrics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(139, 127, 255, 0.1);
+        }
+        .metric-item {
+            text-align: center;
+        }
+        .metric-value {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--purple-light);
+        }
+        .metric-label {
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            position: relative;
+        }
+        .steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--purple) 0%, var(--purple-light) 100%);
+            z-index: 0;
+        }
+        .step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--navy-card);
+            border: 3px solid var(--purple);
+            color: var(--purple-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        .step h3 { font-size: 1.1rem; margin-bottom: 10px; }
+        .step p { color: var(--gray); font-size: 0.9rem; }
+        .integration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .integration-item {
+            background: var(--navy-card);
+            padding: 25px 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(139, 127, 255, 0.1);
+            transition: all 0.3s;
+        }
+        .integration-item:hover {
+            border-color: var(--purple);
+            transform: scale(1.05);
+        }
+        .integration-item span {
+            font-weight: 600;
+            color: var(--gray-light);
+            font-size: 0.9rem;
+        }
+        .integration-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(139, 127, 255, 0.15);
+            border-radius: 10px;
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .security-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 25px;
+            background: var(--navy-card);
+            border-radius: 12px;
+            border: 1px solid rgba(139, 127, 255, 0.1);
+        }
+        .security-icon {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            background: linear-gradient(135deg, rgba(139, 127, 255, 0.2) 0%, rgba(181, 173, 255, 0.1) 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        .security-item h3 { font-size: 1.1rem; }
+        .security-item p { color: var(--gray); font-size: 0.9rem; margin-top: 5px; }
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        .advantage-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 25px;
+            background: var(--navy-card);
+            border-radius: 12px;
+            border: 1px solid rgba(139, 127, 255, 0.1);
+            transition: all 0.3s;
+        }
+        .advantage-item:hover {
+            border-color: rgba(139, 127, 255, 0.3);
+        }
+        .advantage-icon {
+            width: 55px;
+            height: 55px;
+            min-width: 55px;
+            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        .advantage-item h3 { font-size: 1.1rem; }
+        .advantage-item p { color: var(--gray); font-size: 0.9rem; margin-top: 5px; }
+        #cta {
+            background: linear-gradient(135deg, var(--navy-light) 0%, var(--navy) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        #cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(139, 127, 255, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        #cta .container { position: relative; z-index: 1; }
+        #cta p {
+            max-width: 600px;
+            margin: 0 auto 35px;
+            font-size: 1.15rem;
+            color: var(--gray-light);
+        }
+        footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: 50px 0;
+            text-align: center;
+            border-top: 1px solid rgba(139, 127, 255, 0.1);
+        }
+        footer p { color: var(--gray); font-size: 0.9rem; }
+        /* Trusted Section */
+        .trusted-section {
+            padding: 50px 0;
+            border-bottom: 1px solid rgba(139, 127, 255, 0.1);
+        }
+        .trusted-label {
+            text-align: center;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .trusted-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .trusted-logo {
+            color: var(--gray);
+            font-size: 1rem;
+            opacity: 0.6;
+            transition: all 0.3s;
+        }
+        .trusted-logo:hover {
+            opacity: 1;
+            color: var(--purple-light);
+        }
+        /* Stats Section */
+        .stats-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(139, 127, 255, 0.1) 0%, transparent 100%);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+        .stat-block {
+            padding: 30px;
+        }
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--purple-light);
+            display: inline;
+        }
+        .stat-suffix {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--purple);
+            display: inline;
+        }
+        .stat-text {
+            color: var(--gray);
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        /* Testimonials */
+        .testimonials-section {
+            padding: 100px 0;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        .testimonial-card {
+            background: var(--navy-card);
+            padding: 35px;
+            border-radius: 16px;
+            border: 1px solid rgba(139, 127, 255, 0.1);
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            font-size: 4rem;
+            color: var(--purple);
+            opacity: 0.3;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        .testimonial-text {
+            color: var(--gray-light);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--purple) 0%, var(--purple-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .author-info h4 {
+            color: var(--white);
+            font-size: 1rem;
+            margin-bottom: 3px;
+        }
+        .author-info span {
+            color: var(--gray);
+            font-size: 0.85rem;
+        }
+        .testimonial-rating {
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        /* Animate on scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        .animate-on-scroll.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Floating particles background */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: var(--purple);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: floatParticle 15s infinite;
+        }
+        @keyframes floatParticle {
+            0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+        }
+        .analytics-visual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .analytics-card {
+            background: rgba(139, 127, 255, 0.08);
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .analytics-card.full { grid-column: span 2; }
+        .mini-chart {
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+            height: 60px;
+            margin-top: 10px;
+        }
+        .mini-bar {
+            flex: 1;
+            background: linear-gradient(180deg, var(--purple) 0%, var(--purple-light) 100%);
+            border-radius: 3px;
+            animation: miniBarGrow 1.5s ease-out forwards;
+            transform-origin: bottom;
+            transform: scaleY(0);
+        }
+        @keyframes miniBarGrow {
+            to { transform: scaleY(1); }
+        }
+        .mini-bar:nth-child(1) { animation-delay: 0.1s; }
+        .mini-bar:nth-child(2) { animation-delay: 0.2s; }
+        .mini-bar:nth-child(3) { animation-delay: 0.3s; }
+        .mini-bar:nth-child(4) { animation-delay: 0.4s; }
+        .mini-bar:nth-child(5) { animation-delay: 0.5s; }
+        .mini-bar:nth-child(6) { animation-delay: 0.6s; }
+        .mini-bar:nth-child(7) { animation-delay: 0.7s; }
+        .donut-chart {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: conic-gradient(var(--purple) 0% 0%, rgba(139, 127, 255, 0.2) 0% 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto 0;
+            animation: donutFill 2s ease-out forwards;
+            position: relative;
+        }
+        @keyframes donutFill {
+            0% { background: conic-gradient(var(--purple) 0% 0%, rgba(139, 127, 255, 0.2) 0% 100%); }
+            100% { background: conic-gradient(var(--purple) 0% 72%, rgba(139, 127, 255, 0.2) 72% 100%); }
+        }
+        .donut-chart::before {
+            content: '';
+            width: 60px;
+            height: 60px;
+            background: var(--navy-card);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .donut-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .donut-value {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--purple-light);
+            z-index: 2;
+        }
+        .donut-glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(139, 127, 255, 0.5);
+            animation: donutGlow 2s ease-in-out infinite;
+        }
+        @keyframes donutGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(139, 127, 255, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(139, 127, 255, 0.6); }
+        }
+        .sentiment-label {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .sentiment-positive {
+            color: #28CA41;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: rgba(40, 202, 65, 0.15);
+            padding: 4px 12px;
+            border-radius: 12px;
+        }
+        .activity-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 10px;
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #28CA41;
+            border-radius: 50%;
+            animation: statusPulse 1.5s infinite;
+        }
+        @keyframes statusPulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .chart-trend {
+            font-size: 0.7rem;
+            color: #28CA41;
+            font-weight: 600;
+        }
+        .chart-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .chart-labels span {
+            font-size: 0.65rem;
+            color: var(--gray);
+            flex: 1;
+            text-align: center;
+        }
+        .mini-bar {
+            position: relative;
+        }
+        .bar-tooltip {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--purple);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+        }
+        .mini-bar:hover .bar-tooltip {
+            opacity: 1;
+        }
+        .mini-bar:hover {
+            filter: brightness(1.2);
+        }
+        .wave-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            height: 50px;
+            margin-top: 15px;
+        }
+        .wave-bar {
+            width: 4px;
+            background: var(--purple);
+            border-radius: 2px;
+            animation: wave 1s ease-in-out infinite;
+        }
+        .wave-bar:nth-child(2) { animation-delay: 0.1s; }
+        .wave-bar:nth-child(3) { animation-delay: 0.2s; }
+        .wave-bar:nth-child(4) { animation-delay: 0.3s; }
+        .wave-bar:nth-child(5) { animation-delay: 0.4s; }
+        .wave-bar:nth-child(6) { animation-delay: 0.5s; }
+        .wave-bar:nth-child(7) { animation-delay: 0.6s; }
+        @keyframes wave {
+            0%, 100% { height: 20px; }
+            50% { height: 45px; }
+        }
+        @media (max-width: 992px) {
+            .hero-content { grid-template-columns: 1fr; text-align: center; }
+            .hero-buttons { justify-content: center; }
+            .hero-visual { margin-top: 40px; }
+            .steps { grid-template-columns: repeat(2, 1fr); }
+            .steps::before { display: none; }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            .nav-links { display: none; }
+            section { padding: 70px 0; }
+            .two-col { grid-template-columns: 1fr; }
+            .steps { grid-template-columns: 1fr; }
+            .dashboard-stats { grid-template-columns: 1fr; }
+            .analytics-visual { grid-template-columns: 1fr; }
+            .analytics-card.full { grid-column: span 1; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .stat-number { font-size: 2.5rem; }
+            .trusted-logos { gap: 25px; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .advantages-grid { grid-template-columns: 1fr; }
+            .calls-stats-row { grid-template-columns: 1fr; }
+            .calls-grid { grid-template-columns: 1fr; }
+            .calls-metrics { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="url(#logoGrad)" stroke-width="3" fill="none"/>
+                    <path d="M20 8 L20 20 L28 28" stroke="url(#logoGrad)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M12 16 L16 20 L12 24" stroke="#B5ADFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#8B7FFF"/>
+                            <stop offset="100%" stop-color="#B5ADFF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                NEVOX AI
+            </div>
+            <ul class="nav-links">
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#cta" class="btn btn-primary">Book Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <!-- Animated background elements -->
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="hero-glow" id="heroGlow"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="section-label">Arabic AI Voice Platform</span>
+                    <h1>Intelligent Arabic AI Voice Agents Built for Saudi Business Excellence</h1>
+                    <p class="hero-subtitle">Revolutionize customer interactions with conversational AI that speaks authentic Saudi dialects. Automate calls around the clock while delivering exceptional experiences across the MENA region.</p>
+                    <div class="hero-buttons">
+                        <a href="#cta" class="btn btn-primary">Schedule Your Demo</a>
+                        <a href="#platform" class="btn btn-secondary">Explore Platform</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="dashboard-mockup">
+                        <div class="dashboard-header">
+                            <div class="dashboard-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <div class="live-indicator"></div>
+                                <span class="live-dot"></span>
+                                Live Dashboard
+                            </div>
+                        </div>
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <div class="stat-value" id="callsCounter">12.4K</div>
+                                <span class="stat-trend">↑ 12%</span>
+                                <div class="stat-label">Calls Today</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" id="resolutionCounter">94%</div>
+                                <span class="stat-trend">↑ 3%</span>
+                                <div class="stat-label">Resolution Rate</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" id="responseCounter">2.3s</div>
+                                <span class="stat-trend down">↓ 0.5s</span>
+                                <div class="stat-label">Avg Response</div>
+                            </div>
+                        </div>
+                        <div class="dashboard-chart">
+                            <div class="chart-bar" style="height: 45%;"></div>
+                            <div class="chart-bar" style="height: 65%;"></div>
+                            <div class="chart-bar" style="height: 55%;"></div>
+                            <div class="chart-bar" style="height: 80%;"></div>
+                            <div class="chart-bar" style="height: 70%;"></div>
+                            <div class="chart-bar" style="height: 90%;"></div>
+                            <div class="chart-bar" style="height: 75%;"></div>
+                            <div class="chart-bar" style="height: 85%;"></div>
+                            <div class="chart-bar" style="height: 60%;"></div>
+                            <div class="chart-bar" style="height: 95%;"></div>
+                        </div>
+                        <div class="activity-row">
+                            <div class="activity-info">
+                                <div class="activity-avatar">👤</div>
+                                <div class="activity-text">AI handling call with <span>Ahmed</span></div>
+                            </div>
+                            <div class="typing-indicator">
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Animated counter function
+        function animateCounter(elementId, start, end, suffix = '', duration = 2000) {
+            const element = document.getElementById(elementId);
+            if (!element) return;
+            
+            const startTime = performance.now();
+            const isDecimal = String(end).includes('.');
+            
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                const current = start + (end - start) * easeOut;
+                
+                if (isDecimal) {
+                    element.textContent = current.toFixed(1) + suffix;
+                } else if (end >= 1000) {
+                    element.textContent = (current / 1000).toFixed(1) + 'K';
+                } else {
+                    element.textContent = Math.round(current) + suffix;
+                }
+                
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            requestAnimationFrame(update);
+        }
+
+        // Start animations when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                animateCounter('callsCounter', 0, 12400, '', 2500);
+                animateCounter('resolutionCounter', 0, 94, '%', 2000);
+                animateCounter('responseCounter', 5, 2.3, 's', 2000);
+            }, 500);
+        });
+
+        // Simulate live updates
+        setInterval(() => {
+            const callsEl = document.getElementById('callsCounter');
+            if (callsEl) {
+                const current = parseFloat(callsEl.textContent) * 1000;
+                const newVal = current + Math.floor(Math.random() * 10);
+                callsEl.textContent = (newVal / 1000).toFixed(1) + 'K';
+            }
+        }, 3000);
+
+        // Scroll to top button
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Animate on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.card, .industry-card, .security-item, .advantage-item, .step').forEach(el => {
+            el.classList.add('animate-on-scroll');
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- Trusted By Section -->
+    <section id="trusted" class="trusted-section">
+        <div class="container">
+            <p class="trusted-label">Trusted by Leading Enterprises Across Saudi Arabia</p>
+            <div class="trusted-logos">
+                <div class="trusted-logo">🏦 Major Banks</div>
+                <div class="trusted-logo">🏥 Healthcare Leaders</div>
+                <div class="trusted-logo">🏢 Real Estate Giants</div>
+                <div class="trusted-logo">🛒 E-commerce Platforms</div>
+                <div class="trusted-logo">🏛️ Government Entities</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-block">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-suffix">M+</div>
+                    <div class="stat-text">Calls Handled</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-text">Customer Satisfaction</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-text">Enterprise Clients</div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-suffix">/7</div>
+                    <div class="stat-text">Always Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="platform" class="bg-gradient"></section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Choose Us</span>
+                <h2>Reimagine How Your Business Communicates</h2>
+                <p>Traditional call centers struggle with high costs, inconsistent service quality, and limited operating hours. Our Arabic AI Voice Agent platform eliminates these barriers by deploying intelligent virtual agents that handle thousands of simultaneous conversations with native fluency.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Reduce Operational Expenses</h3>
+                    <p>Cut customer service costs by up to 70% while maintaining premium interaction quality. Scale your communication capacity without proportional staffing increases.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Instant Response, Zero Wait</h3>
+                    <p>Customers connect immediately with AI agents ready to assist. No hold queues, no transfers, no frustration—just immediate resolution around the clock.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Authentic Regional Communication</h3>
+                    <p>Purpose-built for Arabic markets with deep understanding of Saudi, Gulf, and Levantine dialects. Your customers feel heard and understood in their native tongue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="capabilities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Platform Features</span>
+                <h2>Comprehensive Voice Automation Capabilities</h2>
+                <p>A complete toolkit for transforming customer communications with artificial intelligence designed specifically for Arabic-speaking markets.</p>
+            </div>
+            <div class="two-col">
+                <div>
+                    <div class="grid" style="gap: 20px;">
+                        <div class="card">
+                            <h3>Natural Language Understanding</h3>
+                            <ul class="feature-list">
+                                <li>Advanced Arabic speech recognition with dialect awareness</li>
+                                <li>Context-aware conversation management</li>
+                                <li>Intent detection and smart routing</li>
+                                <li>Multi-turn dialogue handling</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Conversation Intelligence</h3>
+                            <ul class="feature-list">
+                                <li>Real-time sentiment and emotion analysis</li>
+                                <li>Automatic call transcription in Arabic and English</li>
+                                <li>Performance analytics and reporting dashboards</li>
+                                <li>Quality scoring and compliance monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-box">
+                    <div class="analytics-visual">
+                        <div class="analytics-card">
+                            <span style="color: var(--gray); font-size: 0.8rem;">Sentiment Score</span>
+                            <div class="donut-wrapper">
+                                <div class="donut-chart" id="sentimentDonut">
+                                    <span class="donut-glow"></span>
+                                </div>
+                                <div class="donut-value" id="donutValue">0%</div>
+                            </div>
+                            <div class="sentiment-label">
+                                <span class="sentiment-positive">Positive</span>
+                            </div>
+                        </div>
+                        <div class="analytics-card">
+                            <span style="color: var(--gray); font-size: 0.8rem;">Voice Activity</span>
+                            <div class="wave-visual">
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                            </div>
+                            <div class="activity-status">
+                                <span class="status-dot"></span> Live Processing
+                            </div>
+                        </div>
+                        <div class="analytics-card full">
+                            <div class="chart-header">
+                                <span style="color: var(--gray); font-size: 0.8rem;">Weekly Performance</span>
+                                <span class="chart-trend">↑ 23% vs last week</span>
+                            </div>
+                            <div class="chart-labels">
+                                <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                            </div>
+                            <div class="mini-chart">
+                                <div class="mini-bar" style="height: 50%;"><span class="bar-tooltip">1.2K</span></div>
+                                <div class="mini-bar" style="height: 70%;"><span class="bar-tooltip">1.8K</span></div>
+                                <div class="mini-bar" style="height: 45%;"><span class="bar-tooltip">1.1K</span></div>
+                                <div class="mini-bar" style="height: 85%;"><span class="bar-tooltip">2.1K</span></div>
+                                <div class="mini-bar" style="height: 65%;"><span class="bar-tooltip">1.6K</span></div>
+                                <div class="mini-bar" style="height: 90%;"><span class="bar-tooltip">2.3K</span></div>
+                                <div class="mini-bar" style="height: 75%;"><span class="bar-tooltip">1.9K</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industries" class="bg-gradient">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Industry Solutions</span>
+                <h2>Tailored Solutions Across Key Sectors</h2>
+                <p>Industry-specific AI voice configurations designed to address unique business challenges and customer expectations in Saudi Arabia and the broader GCC region.</p>
+            </div>
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <h3>🏢 Real Estate & Property</h3>
+                    <p>Qualify leads automatically, schedule property viewings, and provide instant information about listings.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>🛒 E-commerce & Retail</h3>
+                    <p>Handle order inquiries, process returns, track shipments, and recover abandoned carts.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>🏦 Banking & Finance</h3>
+                    <p>Secure account inquiries, payment reminders, fraud alerts, and loan status updates.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>🏨 Hospitality & Hotels</h3>
+                    <p>Manage reservations, booking modifications, concierge services, and guest feedback.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>🎓 Education & Training</h3>
+                    <p>Enrollment inquiries, class scheduling, fee reminders, and student support services.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>✈️ Travel & Tourism</h3>
+                    <p>Booking confirmations, itinerary changes, travel advisories, and customer support.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>🚗 Automotive</h3>
+                    <p>Service appointments, recall notifications, sales follow-ups, and test drive coordination.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>⚡ Utilities & Services</h3>
+                    <p>Bill reminders, outage notifications, service requests, and meter confirmations.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>📞 BPO & Call Centers</h3>
+                    <p>Augment human agents with AI handling routine inquiries efficiently.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>🏥 Healthcare</h3>
+                    <p>Appointment reminders, prescription refills, lab results, and patient follow-ups.</p>
+                </div>
+                <div class="industry-card">
+                    <h3>🏛️ Government Services</h3>
+                    <p>Citizen inquiries, application status, document requirements, and scheduling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="call-types">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Voice Automation</span>
+                <h2>Complete Inbound and Outbound Voice Automation</h2>
+                <p>Whether customers reach out to you or you need to connect with them proactively, our Arabic AI Voice Agent handles both directions with equal proficiency.</p>
+            </div>
+            
+            <!-- Inbound & Outbound Dashboard -->
+            <div class="calls-dashboard">
+                <div class="calls-dashboard-header">
+                    <div class="dashboard-dots">
+                        <span class="dot-red"></span>
+                        <span class="dot-yellow"></span>
+                        <span class="dot-green"></span>
+                    </div>
+                    <div class="live-indicator">
+                        <span class="live-dot"></span>
+                        Call Center Dashboard
+                    </div>
+                </div>
+                
+                <div class="calls-stats-row">
+                    <div class="calls-stat-box inbound-box">
+                        <div class="calls-stat-icon">📥</div>
+                        <div class="calls-stat-content">
+                            <span class="calls-stat-label">Inbound Calls</span>
+                            <span class="calls-stat-value" id="inboundCount">0</span>
+                            <span class="calls-stat-trend up">↑ 18% today</span>
+                        </div>
+                        <div class="calls-mini-chart inbound-chart">
+                            <div class="mini-line"></div>
+                        </div>
+                    </div>
+                    <div class="calls-stat-box outbound-box">
+                        <div class="calls-stat-icon">📤</div>
+                        <div class="calls-stat-content">
+                            <span class="calls-stat-label">Outbound Calls</span>
+                            <span class="calls-stat-value" id="outboundCount">0</span>
+                            <span class="calls-stat-trend up">↑ 24% today</span>
+                        </div>
+                        <div class="calls-mini-chart outbound-chart">
+                            <div class="mini-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calls-grid">
+                    <!-- Inbound Panel -->
+                    <div class="calls-panel">
+                        <div class="panel-header">
+                            <h4>📥 Live Inbound Queue</h4>
+                            <span class="panel-badge">8 Active</span>
+                        </div>
+                        <div class="calls-list">
+                            <div class="call-row">
+                                <div class="caller-avatar">👤</div>
+                                <div class="caller-details">
+                                    <span class="caller-name">Ahmed Al-Rashid</span>
+                                    <span class="caller-topic">Account Inquiry</span>
+                                </div>
+                                <div class="call-timer active-call">02:34</div>
+                            </div>
+                            <div class="call-row">
+                                <div class="caller-avatar">👤</div>
+                                <div class="caller-details">
+                                    <span class="caller-name">Sara Mohammed</span>
+                                    <span class="caller-topic">Booking Help</span>
+                                </div>
+                                <div class="call-timer active-call">01:45</div>
+                            </div>
+                            <div class="call-row">
+                                <div class="caller-avatar">👤</div>
+                                <div class="caller-details">
+                                    <span class="caller-name">Omar Hassan</span>
+                                    <span class="caller-topic">Technical Support</span>
+                                </div>
+                                <div class="call-timer waiting">Connecting...</div>
+                            </div>
+                            <div class="call-row resolved">
+                                <div class="caller-avatar">✓</div>
+                                <div class="caller-details">
+                                    <span class="caller-name">Fatima Al-Saud</span>
+                                    <span class="caller-topic">Payment Query</span>
+                                </div>
+                                <div class="call-timer">Resolved</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outbound Panel -->
+                    <div class="calls-panel">
+                        <div class="panel-header">
+                            <h4>📤 Outbound Campaign</h4>
+                            <span class="panel-badge outbound">12 In Progress</span>
+                        </div>
+                        <div class="calls-list">
+                            <div class="call-row">
+                                <div class="caller-avatar outbound-avatar">📞</div>
+                                <div class="caller-details">
+                                    <span class="caller-name">Khalid Ibrahim</span>
+                                    <span class="caller-topic">Payment Reminder</span>
+                                </div>
+                                <div class="call-timer active-call">03:12</div>
+                            </div>
+                            <div class="call-row">
+                                <div class="caller-avatar outbound-avatar">📞</div>
+                                <div class="caller-details">
+                                    <span class="caller-name">Nora Al-Qahtani</span>
+                                    <span class="caller-topic">Appointment Confirm</span>
+                                </div>
+                                <div class="call-timer active-call">00:58</div>
+                            </div>
+                            <div class="call-row">
+                                <div class="caller-avatar outbound-avatar">📞</div>
+                                <div class="caller-details">
+                                    <span class="caller-name">Yusuf Malik</span>
+                                    <span class="caller-topic">Survey Call</span>
+                                </div>
+                                <div class="call-timer dialing">Dialing...</div>
+                            </div>
+                            <div class="call-row resolved">
+                                <div class="caller-avatar">✓</div>
+                                <div class="caller-details">
+                                    <span class="caller-name">Layla Ahmed</span>
+                                    <span class="caller-topic">Follow-up Call</span>
+                                </div>
+                                <div class="call-timer">Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call Recordings Panel -->
+                <div class="recordings-panel">
+                    <div class="recordings-header">
+                        <h4><span class="rec-indicator"></span> Recent Call Recordings</h4>
+                        <span style="color: var(--gray); font-size: 0.8rem;">Auto-transcribed</span>
+                    </div>
+                    <div class="recordings-list">
+                        <div class="recording-item" data-recording="1">
+                            <div class="recording-icon">🎙️</div>
+                            <div class="recording-info">
+                                <span class="recording-name">Ahmed Al-Rashid - Account Inquiry</span>
+                                <div class="recording-meta">
+                                    <span>📅 Today, 2:34 PM</span>
+                                    <span>📊 Sentiment: Positive</span>
+                                </div>
+                            </div>
+                            <div class="recording-waveform">
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                            </div>
+                            <div class="recording-controls">
+                                <button class="play-btn" onclick="togglePlay(this)">
+                                    <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                                </button>
+                                <span class="recording-duration">4:28</span>
+                                <button class="download-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="recording-item" data-recording="2">
+                            <div class="recording-icon">🎙️</div>
+                            <div class="recording-info">
+                                <span class="recording-name">Sara Mohammed - Booking Confirmation</span>
+                                <div class="recording-meta">
+                                    <span>📅 Today, 1:45 PM</span>
+                                    <span>📊 Sentiment: Positive</span>
+                                </div>
+                            </div>
+                            <div class="recording-waveform">
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                            </div>
+                            <div class="recording-controls">
+                                <button class="play-btn" onclick="togglePlay(this)">
+                                    <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                                </button>
+                                <span class="recording-duration">3:12</span>
+                                <button class="download-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="recording-item" data-recording="3">
+                            <div class="recording-icon">🎙️</div>
+                            <div class="recording-info">
+                                <span class="recording-name">Khalid Ibrahim - Payment Reminder</span>
+                                <div class="recording-meta">
+                                    <span>📅 Today, 11:20 AM</span>
+                                    <span>📊 Sentiment: Neutral</span>
+                                </div>
+                            </div>
+                            <div class="recording-waveform">
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                                <div class="wave-line"></div>
+                            </div>
+                            <div class="recording-controls">
+                                <button class="play-btn" onclick="togglePlay(this)">
+                                    <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                                </button>
+                                <span class="recording-duration">2:45</span>
+                                <button class="download-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calls-metrics"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">94%</span>
+                        <span class="metric-label">Resolution Rate</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-value">2.3s</span>
+                        <span class="metric-label">Avg Response</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-value">4.8★</span>
+                        <span class="metric-label">Satisfaction</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-value">0</span>
+                        <span class="metric-label">Queue Wait</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="bg-gradient"></section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Process</span>
+                <h2>Simple Implementation, Powerful Results</h2>
+                <p>Getting started with Saudi AI call automation is straightforward. Our platform integrates with your existing infrastructure and begins delivering value immediately.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Customer Initiates Contact</h3>
+                    <p>Incoming call connects instantly or outbound campaign reaches your target audience at scale.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>AI Engages Naturally</h3>
+                    <p>Voice agent understands intent, accesses relevant data, and conducts conversation in authentic Arabic dialect.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Resolution Delivered</h3>
+                    <p>Issues resolved, appointments booked, information provided, or seamless handoff to human agent.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Insights Generated</h3>
+                    <p>Every interaction analyzed for sentiment, transcribed, and fed into analytics for improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="integrations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Connectivity</span>
+                <h2>Connects With Your Business Ecosystem</h2>
+                <p>Pre-built integrations and flexible APIs ensure our Arabic Call Center AI works harmoniously with the tools your teams already use.</p>
+            </div>
+            <div class="integration-grid">
+                <div class="integration-item"><div class="integration-icon">💼</div><span>Salesforce</span></div>
+                <div class="integration-item"><div class="integration-icon">📊</div><span>Dynamics 365</span></div>
+                <div class="integration-item"><div class="integration-icon">🎯</div><span>HubSpot</span></div>
+                <div class="integration-item"><div class="integration-icon">📱</div><span>WhatsApp</span></div>
+                <div class="integration-item"><div class="integration-icon">📅</div><span>Google Calendar</span></div>
+                <div class="integration-item"><div class="integration-icon">💬</div><span>MS Teams</span></div>
+                <div class="integration-item"><div class="integration-icon">🏢</div><span>SAP</span></div>
+                <div class="integration-item"><div class="integration-icon">💳</div><span>Payment APIs</span></div>
+                <div class="integration-item"><div class="integration-icon">🔗</div><span>REST APIs</span></div>
+                <div class="integration-item"><div class="integration-icon">⚡</div><span>Webhooks</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="security" class="bg-gradient">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Enterprise Ready</span>
+                <h2>Enterprise Security and Saudi Compliance</h2>
+                <p>Built from the ground up to meet the stringent requirements of Saudi Arabian data protection regulations and enterprise security standards.</p>
+            </div>
+            <div class="security-grid">
+                <div class="security-item">
+                    <div class="security-icon">🔒</div>
+                    <div>
+                        <h3>PDPL Compliant</h3>
+                        <p>Full adherence to Saudi Personal Data Protection Law requirements for data handling and privacy.</p>
+                    </div>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🇸🇦</div>
+                    <div>
+                        <h3>Saudi Data Residency</h3>
+                        <p>All data processed and stored within Kingdom of Saudi Arabia borders on certified infrastructure.</p>
+                    </div>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🛡️</div>
+                    <div>
+                        <h3>End-to-End Encryption</h3>
+                        <p>Voice data and transcriptions protected with military-grade encryption at rest and in transit.</p>
+                    </div>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">📊</div>
+                    <div>
+                        <h3>99.9% Uptime SLA</h3>
+                        <p>Enterprise-grade reliability with redundant systems ensuring continuous availability.</p>
+                    </div>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">📈</div>
+                    <div>
+                        <h3>Unlimited Scalability</h3>
+                        <p>Handle ten calls or ten thousand simultaneously without performance degradation.</p>
+                    </div>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">✅</div>
+                    <div>
+                        <h3>Audit Ready</h3>
+                        <p>Complete call logs, access controls, and compliance reporting for regulatory requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Advantage</span>
+                <h2>The Competitive Advantage of Arabic-First AI</h2>
+                <p>Generic voice bots fail in Arabic markets. Our AI Voice Bot for Saudi Arabia succeeds because it was engineered specifically for regional communication patterns.</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">🗣️</div>
+                    <div>
+                        <h3>Native Dialect Mastery</h3>
+                        <p>Not translated—built from scratch for Saudi, Khaleeji, Egyptian, and Levantine Arabic with cultural nuances intact.</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">🧠</div>
+                    <div>
+                        <h3>Cultural Intelligence</h3>
+                        <p>Understands regional customs, business etiquette, and communication preferences unique to MENA markets.</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">⚙️</div>
+                    <div>
+                        <h3>Rapid Deployment</h3>
+                        <p>Go live in weeks, not months. Pre-configured industry templates accelerate time to value.</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">💰</div>
+                    <div>
+                        <h3>Measurable ROI</h3>
+                        <p>Clear cost savings, improved customer satisfaction scores, and operational efficiency gains from day one.</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">🤝</div>
+                    <div>
+                        <h3>Local Support Team</h3>
+                        <p>Saudi-based customer success managers and technical support available in Arabic and English.</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">🔄</div>
+                    <div>
+                        <h3>Continuous Learning</h3>
+                        <p>AI models improve with every conversation, becoming more accurate and effective over time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container">
+            <span class="section-label">Get Started</span>
+            <h2>Ready to Transform Your Customer Communications?</h2>
+            <p>Join leading Saudi enterprises already using intelligent voice automation to reduce costs, improve customer satisfaction, and scale operations effortlessly.</p>
+            <div class="hero-buttons" style="justify-content: center;">
+                <a href="mailto:contact@nevoxai.com" class="btn btn-primary">Schedule Your Demo</a>
+                <a href="mailto:sales@nevoxai.com" class="btn btn-secondary">Talk to Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo" style="justify-content: center; margin-bottom: 20px;">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="url(#logoGrad2)" stroke-width="3" fill="none"/>
+                    <path d="M20 8 L20 20 L28 28" stroke="url(#logoGrad2)" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M12 16 L16 20 L12 24" stroke="#B5ADFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#8B7FFF"/>
+                            <stop offset="100%" stop-color="#B5ADFF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                NEVOX AI
+            </div>
+            <p>&copy; 2025 NEVOX AI. Arabic AI Voice Agent Platform for Saudi Arabia and MENA.</p>
+            <p style="margin-top: 10px;">Riyadh, Kingdom of Saudi Arabia</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </div>
+
+    <!-- Stats Counter Animation -->
+    <script>
+        // Animate stats when in view
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.dataset.target);
+                        animateStatNumber(stat, target);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.getElementById('stats');
+        if (statsSection) statsObserver.observe(statsSection);
+
+        function animateStatNumber(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 30);
+        }
+
+        // Animated Donut Chart
+        function animateDonut() {
+            const donut = document.getElementById('sentimentDonut');
+            const valueEl = document.getElementById('donutValue');
+            if (!donut || !valueEl) return;
+
+            let progress = 0;
+            const target = 72;
+            const duration = 2000;
+            const startTime = performance.now();
+
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                progress = Math.min((elapsed / duration) * target, target);
+                
+                donut.style.background = `conic-gradient(#8B7FFF 0% ${progress}%, rgba(139, 127, 255, 0.2) ${progress}% 100%)`;
+                valueEl.textContent = Math.round(progress) + '%';
+
+                if (progress < target) {
+                    requestAnimationFrame(update);
+                }
+            }
+            requestAnimationFrame(update);
+        }
+
+        // Trigger donut animation when visible
+        const donutObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateDonut();
+                    donutObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const donutEl = document.getElementById('sentimentDonut');
+        if (donutEl) donutObserver.observe(donutEl);
+
+        // Mouse follow light effect in hero
+        const heroSection = document.getElementById('hero');
+        const heroGlow = document.getElementById('heroGlow');
+        
+        if (heroSection && heroGlow) {
+            heroSection.addEventListener('mousemove', (e) => {
+                const rect = heroSection.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                heroGlow.style.left = x + 'px';
+                heroGlow.style.top = y + 'px';
+                heroGlow.style.opacity = '1';
+            });
+            
+            heroSection.addEventListener('mouseleave', () => {
+                heroGlow.style.opacity = '0';
+            });
+        }
+
+        // Animate Inbound/Outbound counters
+        function animateCallsCounter(elementId, target) {
+            const element = document.getElementById(elementId);
+            if (!element) return;
+            
+            let current = 0;
+            const duration = 2000;
+            const startTime = performance.now();
+            
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                current = Math.floor(target * easeOut);
+                
+                element.textContent = current.toLocaleString();
+                
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            requestAnimationFrame(update);
+        }
+
+        // Trigger when calls section is visible
+        const callsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCallsCounter('inboundCount', 8547);
+                    animateCallsCounter('outboundCount', 12893);
+                    callsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        const callsSection = document.getElementById('call-types');
+        if (callsSection) callsObserver.observe(callsSection);
+
+        // Recording Play/Pause functionality
+        let currentlyPlaying = null;
+
+        function togglePlay(button) {
+            const recordingItem = button.closest('.recording-item');
+            const isPlaying = recordingItem.classList.contains('playing');
+            
+            // Stop any currently playing recording
+            if (currentlyPlaying && currentlyPlaying !== recordingItem) {
+                currentlyPlaying.classList.remove('playing');
+                const prevBtn = currentlyPlaying.querySelector('.play-btn');
+                prevBtn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
+            }
+            
+            if (isPlaying) {
+                // Pause
+                recordingItem.classList.remove('playing');
+                button.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
+                currentlyPlaying = null;
+            } else {
+                // Play
+                recordingItem.classList.add('playing');
+                button.innerHTML = '<svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+                currentlyPlaying = recordingItem;
+                
+                // Simulate playback progress
+                simulatePlayback(recordingItem);
+            }
+        }
+
+        function simulatePlayback(recordingItem) {
+            const durationEl = recordingItem.querySelector('.recording-duration');
+            const originalDuration = durationEl.textContent;
+            const [mins, secs] = originalDuration.split(':').map(Number);
+            let totalSeconds = mins * 60 + secs;
+            let currentSecond = 0;
+            
+            const interval = setInterval(() => {
+                if (!recordingItem.classList.contains('playing')) {
+                    durationEl.textContent = originalDuration;
+                    clearInterval(interval);
+                    return;
+                }
+                
+                currentSecond++;
+                const displayMins = Math.floor(currentSecond / 60);
+                const displaySecs = currentSecond % 60;
+                durationEl.textContent = `${displayMins}:${displaySecs.toString().padStart(2, '0')}`;
+                
+                if (currentSecond >= totalSeconds) {
+                    recordingItem.classList.remove('playing');
+                    const btn = recordingItem.querySelector('.play-btn');
+                    btn.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>';
+                    durationEl.textContent = originalDuration;
+                    currentlyPlaying = null;
+                    clearInterval(interval);
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
